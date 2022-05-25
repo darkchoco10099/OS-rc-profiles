@@ -49,8 +49,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 # install oh-my-posh
 choco install ConEmu
-Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+Install-Module posh-git -Scope AllUsers
+Install-Module oh-my-posh -Scope AllUsers
 
 # make profile
 if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
@@ -62,6 +62,8 @@ notepad $PROFILE
 #   Import-Module posh-git
 #   Import-Module oh-my-posh
 #   Set-Theme Paradox
+# or exchange next one
+#   Set-PoshPrompt Paradox
 
 # allow PS with script
 set-executionpolicy remotesigned

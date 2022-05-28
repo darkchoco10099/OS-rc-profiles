@@ -43,7 +43,7 @@ Then, `~/.zshrc`: [.zshrc](./zshrc).
 Following is old version of configuration, see more in [ps/README](./ps/README.md)
 
 Mainly refer to [this article](https://www.bilibili.com/read/cv3878542), in powershell:
-```
+
 # install chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
@@ -59,8 +59,8 @@ if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 notepad $PROFILE
 
 # add those codes in $PROFILE:
-# Import-Module posh-git
-# oh-my-posh init pwsh | Invoke-Expression
+Import-Module posh-git
+oh-my-posh init pwsh | Invoke-Expression
 
 # oh-my-posh具体安装如下
 ![image-20220529014254887](https://cdn.jsdelivr.net/gh/darkchoco10099/img/image-20220529014254887.png)
@@ -73,17 +73,17 @@ set-executionpolicy remotesigned
 
 # download and install font:
 # https://github.com/adam7/delugia-code/releases/download/v1910.04.1/Delugia.Nerd.Font.Complete.ttf
-```
+
 Settings for Windows Terminal: [windows_terminal: settings.json](./windows_terminal/settings.json)
 
 Install two plugins:
-```
+
 # PoShFuck
 Set-ExecutionPolicy RemoteSigned iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattparkes/PoShFuck/master/Install-TheFucker.ps1'))
 
 # fzf
 choco install fzf
 Install-Module PSFzf
-```
+
 
 Then `$PROFILE`: [powershell: Microsoft.PowerShell_profile.ps1n](Microsoft.PowerShell_profile.ps1n).

@@ -64,7 +64,9 @@ oh-my-posh init pwsh | Invoke-Expression
 
 # oh-my-posh具体安装如下
 ![image-20220529014254887](https://cdn.jsdelivr.net/gh/darkchoco10099/img/image-20220529014254887.png)
-https://ohmyposh.dev/docs/installation/prompt
+[官网连接：Change your prompt | Oh My Posh](https://ohmyposh.dev/docs/installation/prompt)
+![image-20220529014916797](https://cdn.jsdelivr.net/gh/darkchoco10099/img/image-20220529014916797.png)
+[官网链接：PowerShell module | Oh My Posh](https://ohmyposh.dev/docs/migrating)
 
 # allow PS with script
 set-executionpolicy remotesigned

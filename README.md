@@ -59,11 +59,12 @@ if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
 notepad $PROFILE
 
 # add those codes in $PROFILE:
-#   Import-Module posh-git
-#   Import-Module oh-my-posh
-#   Set-Theme Paradox
-# or exchange next one
-#   Set-PoshPrompt Paradox
+# Import-Module posh-git
+# oh-my-posh init pwsh | Invoke-Expression
+
+# oh-my-posh具体安装如下
+![image-20220529014254887](https://cdn.jsdelivr.net/gh/darkchoco10099/img/image-20220529014254887.png)
+https://ohmyposh.dev/docs/installation/prompt
 
 # allow PS with script
 set-executionpolicy remotesigned
